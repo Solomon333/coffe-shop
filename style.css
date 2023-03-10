@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color:#1b2834 ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.navmenu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+.navmenu  li{
+    list-style: none;
+}
+
+.navmenu  a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f6d1ba;
+    border-radius: 20px;
+}
+
+.navmenu a:hover {
+    background:#8c7c73 ;
+    color: #fff;
+    transition: all 2s;
+}
+
+.toggle{
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle .bar {
+    background-color: #ff0606;
+    height: 2px;
+    width:100%;
+      
+}
+
+@media (max-width: 768px) {
+    .toggle {
+        display: flex;
+        position: fixed;
+    }
+    .navmenu{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navmenu ul {
+        flex-direction: column;
+    }
+    .navmenu li {
+        text-align: center;
+    }
+    
+    .toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .toggle.active .bar:nth-child(1){
+        transform: translateY(9px) rotate(50deg);
+        transition: 1s ease-in-out;
+    }
+    .toggle.active .bar:nth-child(3){
+        transform: translateY(-10px) rotate(-50deg);
+        transition: 1s ease-in-out;
+    }
+}
+
+
+
+
+.scrolImg {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    width: 100%;
+    display: none;
+    
+    
+}
+
+.active {
+    display: grid;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ .btn button {
+    background: #8c7c73;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+     
+}
+
+.about {
+    height: 100vh;
+    background-image:url(/images/christina-rumpf-LMzwJDu6hTE-unsplash.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f6d1ba;
+    font-size: 55px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: bold;
+
+}
+
+.about p {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    background: #000a;
+    padding: 40px;
+    margin: 20px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    border:#f6d1ba solid 10px;
+    border-radius: 20px;
+
+}
+
+
+
+.backtop {
+    position: fixed;
+    background-color: #fff;
+    color: #f6d1ba;
+    bottom: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 32px;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 2s;
+}
+
+.backtop.active {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 32px;
+}
