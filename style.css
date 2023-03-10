@@ -178,6 +178,22 @@ html {
 
 }
 
+.shop{
+    padding-top: 24px;
+    margin: 24px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+.card:first-child{
+    grid-row: 1/ span 2;
+}
 
 
 .backtop {
