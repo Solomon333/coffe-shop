@@ -5,6 +5,23 @@ const prevBtn = document.querySelector(".leftBtn");
 const  slideImg = document.querySelectorAll(".img");
 let selectedImg = 0;
 
+const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+const navbarLinks = document.getElementsByClassName("navmenu")[0];
+
+toggleBtn.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    toggleBtn.classList.toggle('active');
+
+    
+})
+
+document.querySelectorAll(".navbmenu").forEach(n => n.addEventListener('click', () =>{
+    navbarLinks.classList.toggle('active');
+    toggleBtn.classList.toggle('active');
+}));
+
+
+
 prevBtn.addEventListener("click", () => {
     slideImg[selectedImg].classList.remove("active");
     selectedImg --;
@@ -36,18 +53,4 @@ window.addEventListener("scroll", () => {
         scrollUp.classList.remove("active");
     }
 })
-
-const toggleBtn = document.getElementsByClassName("toggle")[0];
-const navLinks = document.getElementsByClassName("navmenu");
-
-toggleBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    toggleBtn.classList.toggle("active");
-});
-
-document.querySelectorAll(".navmenu").forEach(n = n.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    toggleBtn.classList.toggle("active");
-}))
-
 

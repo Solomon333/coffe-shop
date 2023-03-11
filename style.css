@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
    
 }
 body{
@@ -14,19 +15,36 @@ html {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
-    padding: 20px;
-    margin: 20px;
+    right: 0;
+    left: 0; 
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    
+}
+.navbar  h1{
+    color:#8c7c73;
+    font-size: 32px;
+    font-weight: bolder;
+    cursor: pointer;
     
 }
 
+.navbar a{
+    text-decoration: none;
+}
+.navbar h1:hover{
+    color: #1b2834;
+    transition: .8s;
+}
 .navmenu ul{
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
  
     
 }
@@ -34,22 +52,22 @@ html {
     list-style: none;
 }
 
-.navmenu  a{
+.navmenu li a{
     padding: 10px;
     margin: 10px;
     text-decoration: none;
     font-size: 25px;
-    color: #f6d1ba;
+    color:#1b2834;
     border-radius: 20px;
 }
 
 .navmenu a:hover {
-    background:#8c7c73 ;
-    color: #fff;
-    transition: all 2s;
+   text-decoration: underline #f6d1ba ;
+    
 }
 
-.toggle{
+
+.toggle-btn {
     position: absolute;
     top: .7rem;
     right: 1rem;
@@ -61,44 +79,77 @@ html {
     cursor: pointer;
 }
 
-.toggle .bar {
-    background-color: #ff0606;
-    height: 2px;
+.toggle-btn .bar {
+    background-color: #1b2834;
+    height: 4px;
     width:100%;
-      
+   
+    
+}
+
+
+.social a {
+    font-size: 24px;
+    padding: 5px;
+    margin: 5px;
+    color: #1b2834;
+}
+.social a:hover {
+    color: #f6d1ba;
+    transition: 1s ease-in-out;
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
-    .toggle {
+    .toggle-btn {
         display: flex;
-        position: fixed;
+        
     }
-    .navmenu{
+  
+    .navmenu  {
         display: none;
+        width: 100%;
     }
-    .navbar{
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 10px;
     }
 
-    .navmenu ul {
+    .navmenu ul {  
         flex-direction: column;
     }
-    .navmenu li {
+
+    .navmenu li  {
         text-align: center;
     }
-    
-    .toggle.active .bar:nth-child(2){
-        opacity: 0;
+
+    .navmenu li a {
+        padding: 5px 10px;
     }
-    .toggle.active .bar:nth-child(1){
+
+    .navmenu.active {
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 50px;
+       
+       
+    }
+    .toggle-btn.active .bar:nth-child(2){
+        opacity: 0;        
+    }
+    .toggle-btn.active .bar:nth-child(1){
         transform: translateY(9px) rotate(50deg);
         transition: 1s ease-in-out;
     }
-    .toggle.active .bar:nth-child(3){
-        transform: translateY(-10px) rotate(-50deg);
+    .toggle-btn.active .bar:nth-child(3){
+        transform: translateY(-9px) rotate(-50deg);
         transition: 1s ease-in-out;
+    }
+
+    .social {
+      display: none;
     }
 }
 
@@ -109,6 +160,7 @@ html {
     display: grid;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 .img {
     width: 100%;
@@ -138,45 +190,34 @@ html {
      
 }
 
-.about {
+.about-container {
     height: 100vh;
-    background-image:url(/images/christina-rumpf-LMzwJDu6hTE-unsplash.jpg) ;
+    background-image: url(/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    
 }
-
-.about h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #f6d1ba;
-    font-size: 55px;
-    padding: 20px;
-    margin: 20px;
+.about-header  {
+    font-size: 52px;
     font-weight: bold;
-
+    color: #f6d1ba;
 }
 
-.about p {
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card  {
+    width: 500px;
+    font-size: 32px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
-    font-size: 25px;
-    background: #000a;
-    padding: 40px;
-    margin: 20px;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    border:#f6d1ba solid 10px;
-    border-radius: 20px;
-
+    background-color: #1b2834aa;
+    padding: 20px;
+    border-radius: 50px ;
 }
+
 
 .shop{
     padding-top: 24px;
