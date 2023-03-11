@@ -207,7 +207,7 @@ html {
     color: #f6d1ba;
 }
 
-.card  {
+.card-about {
     width: 500px;
     font-size: 32px;
     word-spacing: 2px;
@@ -216,17 +216,20 @@ html {
     background-color: #1b2834aa;
     padding: 20px;
     border-radius: 50px ;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.shop{
+.card{
     padding-top: 24px;
     margin: 24px;
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 25px;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: 1,  1fr; 
 }
 
 .grid-col-span-2 {
