@@ -246,7 +246,9 @@ html {
 }
 .menu {
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 24px;
+    color: #fff;
+    text-transform:capitalize;
 }
 .menu-group-heading {
     margin: 0;
@@ -260,10 +262,38 @@ html {
     padding: 1.5em 0;
 }
 
+.menu-item{
+    display: flex;
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menu-item-text {
+    flex-grow: 1;
+}
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 @media screen and (min-width: 992px) {
     .menu {
         font-size: 16px;
     }
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu-item-image {
+        width: 200px;
+        height: 200px;
+    }
+    
 }
 
 .backtop {
