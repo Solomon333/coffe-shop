@@ -238,6 +238,28 @@ html {
 .card:first-child{
     grid-row: 1/ span 2;
 }
+.menu{
+    height: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.menu h1 {
+    font-size: 34px;
+    color: #f6d1ba;
+    font-weight: bold;
+
+}
+.menu-card p {
+    font-size: 24px;
+    color: #8c7c73;
+}
+.menu-card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2, 1fr;
+}
 
 
 .backtop {
