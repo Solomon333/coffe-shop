@@ -238,29 +238,33 @@ html {
 .card:first-child{
     grid-row: 1/ span 2;
 }
-.menu{
-    height: 10vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.menu h1 {
-    font-size: 34px;
-    color: #f6d1ba;
-    font-weight: bold;
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
 }
-.menu-card p {
-    font-size: 24px;
-    color: #8c7c73;
+.menu {
+    font-family: sans-serif;
+    font-size: 14px;
 }
-.menu-card {
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+}
+.menu-group {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 2, 1fr;
+    grid-template-columns: 1fr ;
+    gap: 1.5em;
+    padding: 1.5em 0;
 }
 
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 16px;
+    }
+}
 
 .backtop {
     position: fixed;
