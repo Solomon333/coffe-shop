@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: sans-serif;
    
 }
 
@@ -153,11 +153,9 @@ html {
 
 
 
-.scrolImg {
+.scroll-img {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+
 }
 .img {
     width: 100%;
@@ -170,34 +168,14 @@ html {
     display: grid;
 }
 
-.btn {
+.scroll-btn {
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
- .btn button {
-    background: #8c7c73;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 50%;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-     
 }
 
-/* .container-about {
-    height: 100vh;
-    background-image: url(/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-} */
+
 .about-group-heading  {
     font-size: 52px;
     font-weight: bold;
@@ -205,37 +183,6 @@ html {
     border-bottom: 2px solid #ddd;
 }
 
-/* .card-about {
-    width: 500px;
-    font-size: 32px;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-    color: #fff;
-    background-color: #1b2834aa;
-    padding: 20px;
-    border-radius: 50px ;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card{
-    padding-top: 24px;
-    margin: 24px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    grid-template-columns: 1,  1fr; 
-}
-
-.grid-col-span-2 {
-    grid-column: span 2;
-}
-.card:first-child{
-    grid-row: 1/ span 2;
-} */
 
 .shop-item-image {
     width: 350px;

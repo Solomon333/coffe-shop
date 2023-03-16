@@ -1,7 +1,7 @@
 
 const scrollUp = document.querySelector(".backtop");
-const nextBtn = document.querySelector(".rightBtn");
-const prevBtn = document.querySelector(".leftBtn");
+const nextBtn = document.querySelector(".right-btn");
+const prevBtn = document.querySelector(".left-btn");
 const  slideImg = document.querySelectorAll(".img");
 let selectedImg = 0;
 
