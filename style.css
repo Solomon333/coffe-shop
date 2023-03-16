@@ -5,9 +5,6 @@
     font-family: 'Roboto Condensed', sans-serif;
    
 }
-body{
-    background-color:#1b2834 ;
-}
 
 html {
     scroll-behavior: smooth;
@@ -190,7 +187,7 @@ html {
      
 }
 
-.about-container {
+/* .container-about {
     height: 100vh;
     background-image: url(/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
     background-position: center;
@@ -200,14 +197,15 @@ html {
     justify-content: space-evenly;
     align-items: center;
     
-}
-.about-header  {
+} */
+.about-group-heading  {
     font-size: 52px;
     font-weight: bold;
     color: #f6d1ba;
+    border-bottom: 2px solid #ddd;
 }
 
-.card-about {
+/* .card-about {
     width: 500px;
     font-size: 32px;
     word-spacing: 2px;
@@ -237,6 +235,15 @@ html {
 }
 .card:first-child{
     grid-row: 1/ span 2;
+} */
+
+.shop-item-image {
+    width: 350px;
+    height: 300px;
+}
+
+.shop-group-heading {
+    border-bottom: 2px solid #ddd;
 }
 
 .container {
@@ -247,12 +254,11 @@ html {
 .menu {
     font-family: sans-serif;
     font-size: 24px;
-    color: #fff;
     text-transform:capitalize;
 }
 .menu-group-heading {
     margin: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
     border-bottom: 2px solid #ccc;
 }
 .menu-group {
