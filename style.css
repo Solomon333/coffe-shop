@@ -250,6 +250,24 @@ html {
     
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #8c7c73;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-info{
+    display: flexbox;
+    
+}
+
+
 .backtop {
     position: fixed;
     background-color: #fff;
